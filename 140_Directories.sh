@@ -28,6 +28,10 @@ cd font1
 cp -r * ~/.config/share/fonts
 cd ..
 
+cd font2
+cp -r * ~/.config/share/fonts
+cd ..
+
 mkdir -p ~/.config/lxterminal
 mkdir -p ~/.config/picom
 cp timidity.cfg ~/timidity.cfg
