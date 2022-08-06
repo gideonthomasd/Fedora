@@ -23,13 +23,13 @@ cd ..
 
 cp log.sh ~/log.sh
 
-mkdir -p ~/.config/share/fonts
+mkdir -p ~/.local/share/fonts
 cd font1
-cp -r * ~/.config/share/fonts
+cp -r * ~/.local/share/fonts
 cd ..
 
 cd font2
-cp -r * ~/.config/share/fonts
+cp -r * ~/.local/share/fonts
 cd ..
 
 mkdir -p ~/.config/lxterminal
@@ -53,6 +53,11 @@ cd ..
 mkdir -p ~/.icons
 cp -r Bibata-Modern-Ice ~/.icons
 cp Xresources ~/.Xresources
+
+mkdir -p ~/Pictures/wallpapers
+cd wallpapers
+cp -r * ~/Pictures/wallpapers
+cd ..
 
 #mkdir -p ~/.config/lxterminal
 #cp lxterminal.conf ~/.config/lxterminal/lxterminal.conf
