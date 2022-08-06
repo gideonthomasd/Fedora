@@ -67,7 +67,7 @@ ctrl + F5
 	gsimplecal
 	
 ctrl + shift + m
-	lxterminal -e 'padsp mocp'
+	lxterminal -e 'mocp'
 
 ctrl + shift + n
 	mocp --next

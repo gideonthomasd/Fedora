@@ -1,5 +1,5 @@
 #!/bin/bash
 
-up=$(aptitude search "~U" | wc -l)
+up=$(dnf check-update | wc -l)
 
 echo $up
