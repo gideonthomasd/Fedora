@@ -54,7 +54,7 @@ ctrl + Right
 	feh --bg-scale --randomize ~/Pictures/wallpapers/*
 	
 ctrl + shift + m
-	lxterminal -e 'padsp mocp'
+	lxterminal -e 'mocp'
 
 ctrl + shift + n
 	mocp --next
