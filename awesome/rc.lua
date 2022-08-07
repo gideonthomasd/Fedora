@@ -247,16 +247,16 @@ awful.screen.connect_for_each_screen(function(s)
             layout = wibox.layout.fixed.horizontal,
         --    volume_widget(),
         -- customized
-        --    space,
+            space,
             mydownload,
             awful.widget.watch("/home/phil/.config/awesome/updates.sh" ,600),
             space,
             myweather,
             awful.widget.watch("/home/phil/.config/awesome/dwmweather.sh" ,600),
             space,
-            mymusic,
-            awful.widget.watch("/home/phil/.config/awesome/music_state.sh" ,1),
-            space,
+        --    mymusic,
+        --    awful.widget.watch("/home/phil/.config/awesome/music_state.sh" ,1),
+        --    space,
 --            mytext,
 			myram,
             awful.widget.watch('bash -c "free -h | awk \'/^Mem/ {print $3}\'"' ,1),  
@@ -653,17 +653,20 @@ beautiful.useless_gap = 5
 
 -- Autostart
 --awful.spawn.with_shell("~/.config/awesome/polybar/launch.sh")
+
 awful.spawn.with_shell("parcellite")
 
 --awful.spawn.with_shell("picom --config ~/.config/awesome/picom.conf")
 awful.spawn.with_shell("picom")
 awful.spawn.with_shell("lxpolkit")
 awful.spawn.with_shell("nm-applet")
-
+awful.spawn.with_shell("clementine")
 awful.spawn.with_shell("sxhkd -c ~/.config/awesome/sxhkdrc")
-awful.spawn.with_shell("volumeicon")
---awful.spawn.with_shell("blueman-applet")
 
+
+
+awful.spawn.with_shell("volumeicon")
+awful.spawn.with_shell("blueman-applet")
 gears.timer {
        timeout = 30,
        autostart = true,
