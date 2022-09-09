@@ -8,7 +8,7 @@ type = internal/xwindow
 ;   %title%
 ; Default: %title%
 label = %title%
-label-maxlen = 22
+label-maxlen = 18
 
 format-foreground = #9999FF
 ;format-background = ${colors.background}
@@ -30,7 +30,7 @@ interval = 1
 exec = ~/.config/i3/polybar/moc.sh
 ;format-foreground = ${colors.black}
 click-left = mocp -G
-click-right = setsid -f lxterminal -e 'padsp mocp'
+click-right = setsid -f lxterminal -e 'mocp'
 format-background = ${color.cyan}
 label-foreground = ${color.background}
 
